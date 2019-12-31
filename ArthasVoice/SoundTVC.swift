@@ -16,7 +16,7 @@ class SoundTVC: UITableViewCell {
         v.layoutIfNeeded()
         v.clipsToBounds = true
         v.layer.cornerRadius = 15
-        //v.backgroundColor = UIColor.white
+        v.backgroundColor = LIGHT_BACKGROUND_COLOR
         //v.dropShadow()
         return v
     }()
@@ -29,14 +29,14 @@ class SoundTVC: UITableViewCell {
     let soundName: UILabel = {
         let lbl = UILabel()
         lbl.font = UIFont(name: "HelveticaNeue", size: 20)
-        lbl.textColor = UIColor.white
+        lbl.textColor = LABEL_COLOR
         lbl.adjustsFontSizeToFitWidth = true
         lbl.minimumScaleFactor = 0.2
         return lbl
     }()
     
     let shareButton: UIButton = {
-        let btn = UIButton()
+        let btn = UIButton(type: .system)
         let origImage = UIImage(named: "share")
         let tintedImage = origImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         btn.setImage(tintedImage, for: .normal)
@@ -45,7 +45,7 @@ class SoundTVC: UITableViewCell {
     }()
     
     let playButton: UIButton = {
-        let btn = UIButton()
+        let btn = UIButton(type: .system)
         let origImage = UIImage(named: "play")
         let tintedImage = origImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         btn.setImage(tintedImage, for: .normal)
@@ -55,7 +55,7 @@ class SoundTVC: UITableViewCell {
     }()
     
     let favButton: UIButton = {
-        let btn = UIButton()
+        let btn = UIButton(type: .system)
         let origImage = UIImage(named: "fav")
         let tintedImage = origImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         btn.setImage(tintedImage, for: .normal)
@@ -72,7 +72,7 @@ class SoundTVC: UITableViewCell {
         self.frame.size.width = UIScreen.main.bounds.width
         backView.frame = CGRect(x: 15, y: 10, width: self.frame.width - 30, height: self.frame.height - 20)
         addSubview(backView)
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = LIGHT_BACKGROUND_COLOR
         iconImageView.frame = CGRect(x: 12, y: 12, width: 64, height: 64)
         iconImageView.contentMode = .scaleAspectFill
         backView.addSubview(iconImageView)

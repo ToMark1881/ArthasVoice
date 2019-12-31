@@ -23,7 +23,7 @@ class LikedSoundsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tv.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         tv.rowHeight = 88 + 30
         tv.separatorStyle = .none
-        tv.backgroundColor = UIColor.black
+        tv.backgroundColor = LIGHT_BACKGROUND_COLOR
         tv.separatorColor = UIColor.clear
         return tv
     }()
@@ -49,8 +49,8 @@ class LikedSoundsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         cell.shareButton.addTarget(self, action: #selector(share(_:)), for: .touchUpInside)
         
         let index = indexPath.row + 1
-        let mod = index % MainVC.colours.count
-        cell.backView.backgroundColor = MainVC.colours[mod]
+        let mod = index % COLORS.count
+        cell.backView.backgroundColor = COLORS[mod]
         cell.backView.dropShadow()
         cell.shareButton.tintColor = UIColor.white.withAlphaComponent(0.8)
         cell.playButton.tintColor = UIColor.white.withAlphaComponent(0.8)
@@ -129,8 +129,8 @@ class LikedSoundsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        images = MainVC.images
-        images.shuffle()
+        self.images = IMAGES
+        self.images.shuffle()
         loadData()
     }
     
@@ -163,14 +163,14 @@ class LikedSoundsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         soundsTableView.delegate = self
         soundsTableView.dataSource = self
         soundsTableView.separatorStyle = .none
-        soundsTableView.backgroundColor = UIColor.white
+        soundsTableView.backgroundColor = LIGHT_BACKGROUND_COLOR
         soundsTableView.allowsSelection = false
         soundsTableView.register(SoundTVC.self, forCellReuseIdentifier: soundCell)
         self.view.addSubview(soundsTableView)
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = LIGHT_BACKGROUND_COLOR
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.navigationController?.title = "Избранное"
-        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor = LIGHT_BACKGROUND_COLOR
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 18)!]
         if #available(iOS 11.0, *) {
             self.navigationController?.navigationBar.prefersLargeTitles = true
@@ -188,7 +188,7 @@ extension UITableView {
     func setEmptyMessage(_ message: String) {
         let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
         messageLabel.text = message
-        messageLabel.textColor = UIColor.black.withAlphaComponent(0.7)
+        messageLabel.textColor = LABEL_COLOR
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = .center
         messageLabel.font = UIFont(name: "HelveticaNeue", size: 22)

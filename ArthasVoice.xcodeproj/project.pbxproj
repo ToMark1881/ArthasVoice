@@ -47,6 +47,13 @@
 		7D90740F21FA4841006466A2 /* net_nastroyenia.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D90740821FA4841006466A2 /* net_nastroyenia.m4a */; };
 		7D90741021FA4841006466A2 /* da_eto_jestko.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D90740921FA4841006466A2 /* da_eto_jestko.m4a */; };
 		7D90741121FA4841006466A2 /* yeah.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D90740A21FA4841006466A2 /* yeah.m4a */; };
+		7D93727D230B051F00F47A69 /* one_moment_plz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D937279230B051F00F47A69 /* one_moment_plz.m4a */; };
+		7D93727E230B051F00F47A69 /* na_debilichah.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D93727A230B051F00F47A69 /* na_debilichah.m4a */; };
+		7D93727F230B051F00F47A69 /* podrubil_proveryaite.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D93727B230B051F00F47A69 /* podrubil_proveryaite.m4a */; };
+		7D937280230B051F00F47A69 /* sto_iz_decyati.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D93727C230B051F00F47A69 /* sto_iz_decyati.m4a */; };
+		7D937284230B052D00F47A69 /* lejat_plus_lejat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D937281230B052C00F47A69 /* lejat_plus_lejat.m4a */; };
+		7D937285230B052D00F47A69 /* kyda_ocherednyari.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D937282230B052C00F47A69 /* kyda_ocherednyari.m4a */; };
+		7D937286230B052D00F47A69 /* lololo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D937283230B052D00F47A69 /* lololo.m4a */; };
 		7D94CAD121F9C83900ED9762 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D94CAD021F9C83900ED9762 /* MainVC.swift */; };
 		7D94CB4521F9C85D00ED9762 /* solianovo_aaa.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CAD221F9C85500ED9762 /* solianovo_aaa.m4a */; };
 		7D94CB4621F9C85D00ED9762 /* nu_pomogite_mne_tvari.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CAD321F9C85500ED9762 /* nu_pomogite_mne_tvari.m4a */; };
@@ -164,12 +171,36 @@
 		7D94CBB621F9C85D00ED9762 /* stuk_po_stolu_11.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CB4321F9C85D00ED9762 /* stuk_po_stolu_11.m4a */; };
 		7D94CBB721F9C85D00ED9762 /* oy_oy_oy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CB4421F9C85D00ED9762 /* oy_oy_oy.m4a */; };
 		7D94CBBA21F9CA7C00ED9762 /* i_am_legend.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CBB921F9CA7C00ED9762 /* i_am_legend.m4a */; };
+		7D9E91C623BB5EAE00803031 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E91C523BB5EAE00803031 /* Extensions.swift */; };
 		7DBCA63E21E2712D00A08DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCA63D21E2712D00A08DA4 /* AppDelegate.swift */; };
 		7DBCA64321E2712D00A08DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DBCA64121E2712D00A08DA4 /* Main.storyboard */; };
 		7DBCA64621E2712D00A08DA4 /* ArthasVoice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCA64421E2712D00A08DA4 /* ArthasVoice.xcdatamodeld */; };
 		7DBCA64821E2712E00A08DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBCA64721E2712E00A08DA4 /* Assets.xcassets */; };
 		7DBCA64B21E2712E00A08DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DBCA64921E2712E00A08DA4 /* LaunchScreen.storyboard */; };
+		7DC7E2A022B6D2FC006C7CEA /* Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC7E29F22B6D2FC006C7CEA /* Purchases.swift */; };
+		7DC7E2A922B6D6D2006C7CEA /* vedmak.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7E2A622B6D5E3006C7CEA /* vedmak.m4a */; };
+		7DC7E2AA22B6D6DA006C7CEA /* bababablabla.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7E2A422B6D5E3006C7CEA /* bababablabla.m4a */; };
+		7DC7E2AB22B6D6DA006C7CEA /* chto_ya_sdelal.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7E2A322B6D5E3006C7CEA /* chto_ya_sdelal.m4a */; };
+		7DC7E2AC22B6D6DA006C7CEA /* i_will_crush_you.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7E2A822B6D5E3006C7CEA /* i_will_crush_you.m4a */; };
+		7DC7E2AD22B6D6DA006C7CEA /* kulityyy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7E2A222B6D5E3006C7CEA /* kulityyy.m4a */; };
+		7DC7E2AE22B6D6DA006C7CEA /* mochi_yroda.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7E2A722B6D5E3006C7CEA /* mochi_yroda.m4a */; };
+		7DC7E2AF22B6D6DA006C7CEA /* piymav_na_gendzutsy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7E2A522B6D5E3006C7CEA /* piymav_na_gendzutsy.m4a */; };
+		7DC7E2B022B6D6DA006C7CEA /* sleduishii.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7E2A122B6D5E3006C7CEA /* sleduishii.m4a */; };
 		7DD4CAF8225BB3F500195074 /* bidlo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DD4CAF7225BB3F500195074 /* bidlo.m4a */; };
+		7DF44FFE23BBE66600EDEA10 /* chto_proishodit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF023BBE66400EDEA10 /* chto_proishodit.m4a */; };
+		7DF44FFF23BBE66600EDEA10 /* chto_smeshnogo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF123BBE66400EDEA10 /* chto_smeshnogo.m4a */; };
+		7DF4500023BBE66600EDEA10 /* shok_content.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF223BBE66400EDEA10 /* shok_content.m4a */; };
+		7DF4500123BBE66600EDEA10 /* shtoooo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF323BBE66500EDEA10 /* shtoooo.m4a */; };
+		7DF4500223BBE66600EDEA10 /* ti_idiot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF423BBE66500EDEA10 /* ti_idiot.m4a */; };
+		7DF4500323BBE66600EDEA10 /* eto_bila_oshibka.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF523BBE66500EDEA10 /* eto_bila_oshibka.m4a */; };
+		7DF4500423BBE66600EDEA10 /* ta_za_sho.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF623BBE66500EDEA10 /* ta_za_sho.m4a */; };
+		7DF4500523BBE66600EDEA10 /* eh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF723BBE66500EDEA10 /* eh.m4a */; };
+		7DF4500623BBE66600EDEA10 /* yasno.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF823BBE66500EDEA10 /* yasno.m4a */; };
+		7DF4500723BBE66600EDEA10 /* udachi_vam.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FF923BBE66500EDEA10 /* udachi_vam.m4a */; };
+		7DF4500823BBE66600EDEA10 /* shok.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FFA23BBE66600EDEA10 /* shok.m4a */; };
+		7DF4500923BBE66600EDEA10 /* tupo_domoi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FFB23BBE66600EDEA10 /* tupo_domoi.m4a */; };
+		7DF4500A23BBE66600EDEA10 /* sporno.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FFC23BBE66600EDEA10 /* sporno.m4a */; };
+		7DF4500B23BBE66600EDEA10 /* strashno_virubay.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF44FFD23BBE66600EDEA10 /* strashno_virubay.m4a */; };
 		7DF59C9222783DF900AE6A59 /* zdarova.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF59C8322783DF800AE6A59 /* zdarova.m4a */; };
 		7DF59C9322783DF900AE6A59 /* tutututututututututu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF59C8422783DF800AE6A59 /* tutututututututututu.m4a */; };
 		7DF59C9422783DF900AE6A59 /* skolko_pomoshi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF59C8522783DF800AE6A59 /* skolko_pomoshi.m4a */; };
@@ -230,6 +261,13 @@
 		7D90740821FA4841006466A2 /* net_nastroyenia.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = net_nastroyenia.m4a; sourceTree = "<group>"; };
 		7D90740921FA4841006466A2 /* da_eto_jestko.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = da_eto_jestko.m4a; sourceTree = "<group>"; };
 		7D90740A21FA4841006466A2 /* yeah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = yeah.m4a; sourceTree = "<group>"; };
+		7D937279230B051F00F47A69 /* one_moment_plz.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = one_moment_plz.m4a; sourceTree = "<group>"; };
+		7D93727A230B051F00F47A69 /* na_debilichah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = na_debilichah.m4a; sourceTree = "<group>"; };
+		7D93727B230B051F00F47A69 /* podrubil_proveryaite.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = podrubil_proveryaite.m4a; sourceTree = "<group>"; };
+		7D93727C230B051F00F47A69 /* sto_iz_decyati.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sto_iz_decyati.m4a; sourceTree = "<group>"; };
+		7D937281230B052C00F47A69 /* lejat_plus_lejat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = lejat_plus_lejat.m4a; sourceTree = "<group>"; };
+		7D937282230B052C00F47A69 /* kyda_ocherednyari.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kyda_ocherednyari.m4a; sourceTree = "<group>"; };
+		7D937283230B052D00F47A69 /* lololo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = lololo.m4a; sourceTree = "<group>"; };
 		7D94CAD021F9C83900ED9762 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7D94CAD221F9C85500ED9762 /* solianovo_aaa.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = solianovo_aaa.m4a; sourceTree = "<group>"; };
 		7D94CAD321F9C85500ED9762 /* nu_pomogite_mne_tvari.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nu_pomogite_mne_tvari.m4a; sourceTree = "<group>"; };
@@ -347,6 +385,7 @@
 		7D94CB4321F9C85D00ED9762 /* stuk_po_stolu_11.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = stuk_po_stolu_11.m4a; sourceTree = "<group>"; };
 		7D94CB4421F9C85D00ED9762 /* oy_oy_oy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = oy_oy_oy.m4a; sourceTree = "<group>"; };
 		7D94CBB921F9CA7C00ED9762 /* i_am_legend.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = i_am_legend.m4a; sourceTree = "<group>"; };
+		7D9E91C523BB5EAE00803031 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7DBCA63A21E2712D00A08DA4 /* ArthasVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArthasVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBCA63D21E2712D00A08DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DBCA64221E2712D00A08DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -354,7 +393,30 @@
 		7DBCA64721E2712E00A08DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DBCA64A21E2712E00A08DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DBCA64C21E2712E00A08DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC7E29F22B6D2FC006C7CEA /* Purchases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchases.swift; sourceTree = "<group>"; };
+		7DC7E2A122B6D5E3006C7CEA /* sleduishii.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sleduishii.m4a; sourceTree = "<group>"; };
+		7DC7E2A222B6D5E3006C7CEA /* kulityyy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kulityyy.m4a; sourceTree = "<group>"; };
+		7DC7E2A322B6D5E3006C7CEA /* chto_ya_sdelal.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = chto_ya_sdelal.m4a; sourceTree = "<group>"; };
+		7DC7E2A422B6D5E3006C7CEA /* bababablabla.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bababablabla.m4a; sourceTree = "<group>"; };
+		7DC7E2A522B6D5E3006C7CEA /* piymav_na_gendzutsy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = piymav_na_gendzutsy.m4a; sourceTree = "<group>"; };
+		7DC7E2A622B6D5E3006C7CEA /* vedmak.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vedmak.m4a; sourceTree = "<group>"; };
+		7DC7E2A722B6D5E3006C7CEA /* mochi_yroda.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = mochi_yroda.m4a; sourceTree = "<group>"; };
+		7DC7E2A822B6D5E3006C7CEA /* i_will_crush_you.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = i_will_crush_you.m4a; sourceTree = "<group>"; };
 		7DD4CAF7225BB3F500195074 /* bidlo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bidlo.m4a; sourceTree = "<group>"; };
+		7DF44FF023BBE66400EDEA10 /* chto_proishodit.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = chto_proishodit.m4a; sourceTree = "<group>"; };
+		7DF44FF123BBE66400EDEA10 /* chto_smeshnogo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = chto_smeshnogo.m4a; sourceTree = "<group>"; };
+		7DF44FF223BBE66400EDEA10 /* shok_content.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shok_content.m4a; sourceTree = "<group>"; };
+		7DF44FF323BBE66500EDEA10 /* shtoooo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shtoooo.m4a; sourceTree = "<group>"; };
+		7DF44FF423BBE66500EDEA10 /* ti_idiot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ti_idiot.m4a; sourceTree = "<group>"; };
+		7DF44FF523BBE66500EDEA10 /* eto_bila_oshibka.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eto_bila_oshibka.m4a; sourceTree = "<group>"; };
+		7DF44FF623BBE66500EDEA10 /* ta_za_sho.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ta_za_sho.m4a; sourceTree = "<group>"; };
+		7DF44FF723BBE66500EDEA10 /* eh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = eh.m4a; sourceTree = "<group>"; };
+		7DF44FF823BBE66500EDEA10 /* yasno.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = yasno.m4a; sourceTree = "<group>"; };
+		7DF44FF923BBE66500EDEA10 /* udachi_vam.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = udachi_vam.m4a; sourceTree = "<group>"; };
+		7DF44FFA23BBE66600EDEA10 /* shok.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shok.m4a; sourceTree = "<group>"; };
+		7DF44FFB23BBE66600EDEA10 /* tupo_domoi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tupo_domoi.m4a; sourceTree = "<group>"; };
+		7DF44FFC23BBE66600EDEA10 /* sporno.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sporno.m4a; sourceTree = "<group>"; };
+		7DF44FFD23BBE66600EDEA10 /* strashno_virubay.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = strashno_virubay.m4a; sourceTree = "<group>"; };
 		7DF59C8322783DF800AE6A59 /* zdarova.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = zdarova.m4a; sourceTree = "<group>"; };
 		7DF59C8422783DF800AE6A59 /* tutututututututututu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tutututututututututu.m4a; sourceTree = "<group>"; };
 		7DF59C8522783DF800AE6A59 /* skolko_pomoshi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = skolko_pomoshi.m4a; sourceTree = "<group>"; };
@@ -388,6 +450,14 @@
 		7D94CBB821F9C8A700ED9762 /* ArthasSounds */ = {
 			isa = PBXGroup;
 			children = (
+				7DC7E2A422B6D5E3006C7CEA /* bababablabla.m4a */,
+				7DC7E2A322B6D5E3006C7CEA /* chto_ya_sdelal.m4a */,
+				7DC7E2A822B6D5E3006C7CEA /* i_will_crush_you.m4a */,
+				7DC7E2A222B6D5E3006C7CEA /* kulityyy.m4a */,
+				7DC7E2A722B6D5E3006C7CEA /* mochi_yroda.m4a */,
+				7DC7E2A522B6D5E3006C7CEA /* piymav_na_gendzutsy.m4a */,
+				7DC7E2A122B6D5E3006C7CEA /* sleduishii.m4a */,
+				7DC7E2A622B6D5E3006C7CEA /* vedmak.m4a */,
 				7D69D80821FAF6D000BC7492 /* virki_jinki.m4a */,
 				7D69D80421FAF25000BC7492 /* dobriy_pochantek.m4a */,
 				7D69D80521FAF25000BC7492 /* opa_f5.m4a */,
@@ -559,6 +629,27 @@
 				7DF59C8D22783DF900AE6A59 /* your_soul.m4a */,
 				7DF59C8A22783DF900AE6A59 /* zasoleno.m4a */,
 				7DF59C8322783DF800AE6A59 /* zdarova.m4a */,
+				7D93727A230B051F00F47A69 /* na_debilichah.m4a */,
+				7D937279230B051F00F47A69 /* one_moment_plz.m4a */,
+				7D93727B230B051F00F47A69 /* podrubil_proveryaite.m4a */,
+				7D93727C230B051F00F47A69 /* sto_iz_decyati.m4a */,
+				7D937282230B052C00F47A69 /* kyda_ocherednyari.m4a */,
+				7D937281230B052C00F47A69 /* lejat_plus_lejat.m4a */,
+				7D937283230B052D00F47A69 /* lololo.m4a */,
+				7DF44FF023BBE66400EDEA10 /* chto_proishodit.m4a */,
+				7DF44FF123BBE66400EDEA10 /* chto_smeshnogo.m4a */,
+				7DF44FF723BBE66500EDEA10 /* eh.m4a */,
+				7DF44FF523BBE66500EDEA10 /* eto_bila_oshibka.m4a */,
+				7DF44FF223BBE66400EDEA10 /* shok_content.m4a */,
+				7DF44FFA23BBE66600EDEA10 /* shok.m4a */,
+				7DF44FF323BBE66500EDEA10 /* shtoooo.m4a */,
+				7DF44FFC23BBE66600EDEA10 /* sporno.m4a */,
+				7DF44FFD23BBE66600EDEA10 /* strashno_virubay.m4a */,
+				7DF44FF623BBE66500EDEA10 /* ta_za_sho.m4a */,
+				7DF44FF423BBE66500EDEA10 /* ti_idiot.m4a */,
+				7DF44FFB23BBE66600EDEA10 /* tupo_domoi.m4a */,
+				7DF44FF923BBE66500EDEA10 /* udachi_vam.m4a */,
+				7DF44FF823BBE66500EDEA10 /* yasno.m4a */,
 			);
 			path = ArthasSounds;
 			sourceTree = "<group>";
@@ -584,12 +675,14 @@
 			children = (
 				7D94CBB821F9C8A700ED9762 /* ArthasSounds */,
 				7D49FAB021E28B5A00168766 /* SoundTVC.swift */,
+				7D9E91C523BB5EAE00803031 /* Extensions.swift */,
 				7DBCA63D21E2712D00A08DA4 /* AppDelegate.swift */,
 				7DFF7DBA21EF9C5F005BFAB2 /* LikedSoundsVC.swift */,
 				7DFF7DB821EF9C4B005BFAB2 /* InfoVC.swift */,
+				7DC7E29F22B6D2FC006C7CEA /* Purchases.swift */,
+				7D94CAD021F9C83900ED9762 /* MainVC.swift */,
 				7DBCA64721E2712E00A08DA4 /* Assets.xcassets */,
 				7DBCA64921E2712E00A08DA4 /* LaunchScreen.storyboard */,
-				7D94CAD021F9C83900ED9762 /* MainVC.swift */,
 				7DBCA64121E2712D00A08DA4 /* Main.storyboard */,
 				7DBCA64C21E2712E00A08DA4 /* Info.plist */,
 				7DBCA64421E2712D00A08DA4 /* ArthasVoice.xcdatamodeld */,
@@ -657,13 +750,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF59C9C22783DF900AE6A59 /* your_soul.m4a in Resources */,
+				7DF4500123BBE66600EDEA10 /* shtoooo.m4a in Resources */,
 				7D21CE0B2260EC2F000DB5FC /* korol_vernulsya-1.m4a in Resources */,
 				7D94CB6D21F9C85D00ED9762 /* fiksiruyu.m4a in Resources */,
 				7D90741121FA4841006466A2 /* yeah.m4a in Resources */,
 				7D94CB6921F9C85D00ED9762 /* my_proyebali_etu_igru.m4a in Resources */,
+				7DC7E2AE22B6D6DA006C7CEA /* mochi_yroda.m4a in Resources */,
 				7D04FE92225B7F3100C566D7 /* apelsini.m4a in Resources */,
 				7D94CB6021F9C85D00ED9762 /* stuk_po_stolu_6.m4a in Resources */,
 				7D94CB8B21F9C85D00ED9762 /* uuu_chto_eto.m4a in Resources */,
+				7DC7E2AC22B6D6DA006C7CEA /* i_will_crush_you.m4a in Resources */,
 				7D94CB4D21F9C85D00ED9762 /* stuk_po_stolu_3.m4a in Resources */,
 				7D04FE97225B7F3100C566D7 /* strashno_virubai.m4a in Resources */,
 				7D94CB5C21F9C85D00ED9762 /* begu.m4a in Resources */,
@@ -674,13 +770,16 @@
 				7D04FE8C225B7F3100C566D7 /* vernulsya_is_nebitiya.m4a in Resources */,
 				7DF59C9322783DF900AE6A59 /* tutututututututututu.m4a in Resources */,
 				7D94CB7821F9C85D00ED9762 /* obrabotal_urodov.m4a in Resources */,
+				7DF4500423BBE66600EDEA10 /* ta_za_sho.m4a in Resources */,
 				7D94CB9221F9C85D00ED9762 /* smeh_1.m4a in Resources */,
 				7D94CB7E21F9C85D00ED9762 /* dada.m4a in Resources */,
 				7D94CB9E21F9C85D00ED9762 /* odin_na_odin.m4a in Resources */,
 				7DF59C9222783DF900AE6A59 /* zdarova.m4a in Resources */,
 				7D94CB5621F9C85D00ED9762 /* rev_3.m4a in Resources */,
+				7DC7E2AD22B6D6DA006C7CEA /* kulityyy.m4a in Resources */,
 				7D94CBB621F9C85D00ED9762 /* stuk_po_stolu_11.m4a in Resources */,
 				7D94CB5121F9C85D00ED9762 /* vysosal_urod_voniuchiy.m4a in Resources */,
+				7D93727E230B051F00F47A69 /* na_debilichah.m4a in Resources */,
 				7DBCA64B21E2712E00A08DA4 /* LaunchScreen.storyboard in Resources */,
 				7D90740C21FA4841006466A2 /* somnitelnaya_informaciya.m4a in Resources */,
 				7D94CBB221F9C85D00ED9762 /* stuk_po_stolu_9.m4a in Resources */,
@@ -690,28 +789,37 @@
 				7D21CE0E2260EC2F000DB5FC /* roflanpoel-1.m4a in Resources */,
 				7D94CB5521F9C85D00ED9762 /* prosto_urod.m4a in Resources */,
 				7D94CB8F21F9C85D00ED9762 /* na_na_na.m4a in Resources */,
+				7DF4500223BBE66600EDEA10 /* ti_idiot.m4a in Resources */,
 				7D94CB5421F9C85D00ED9762 /* ya_ne_vizhu_kripov.m4a in Resources */,
 				7D94CB8121F9C85D00ED9762 /* nu_cho_urody.m4a in Resources */,
 				7D94CBB421F9C85D00ED9762 /* solianovo.m4a in Resources */,
 				7D94CB7621F9C85D00ED9762 /* seichas_ya_vas_budu_rezat.m4a in Resources */,
+				7D937280230B051F00F47A69 /* sto_iz_decyati.m4a in Resources */,
 				7D94CB7F21F9C85D00ED9762 /* ya_shchas_sdohnu.m4a in Resources */,
 				7D04FE89225B7F3100C566D7 /* sovpadenie.m4a in Resources */,
+				7DC7E2B022B6D6DA006C7CEA /* sleduishii.m4a in Resources */,
+				7D937285230B052D00F47A69 /* kyda_ocherednyari.m4a in Resources */,
 				7D94CB5B21F9C85D00ED9762 /* ston.m4a in Resources */,
 				7D94CB6F21F9C85D00ED9762 /* netu_pomoshi.m4a in Resources */,
 				7D94CB9621F9C85D00ED9762 /* back.m4a in Resources */,
+				7DF4500823BBE66600EDEA10 /* shok.m4a in Resources */,
 				7D21CE0A2260EC2F000DB5FC /* chto_vi_delaete-1.m4a in Resources */,
 				7D94CB4921F9C85D00ED9762 /* smeh_3.m4a in Resources */,
 				7D94CB6C21F9C85D00ED9762 /* pobeda_blizka_parni.m4a in Resources */,
 				7D94CB7D21F9C85D00ED9762 /* smeh_4.m4a in Resources */,
+				7DF4500723BBE66600EDEA10 /* udachi_vam.m4a in Resources */,
 				7D04FE88225B7F3100C566D7 /* dratuti.m4a in Resources */,
 				7D94CB9721F9C85D00ED9762 /* dlia_menia_eto_ray.m4a in Resources */,
 				7DF59C9B22783DF900AE6A59 /* ymri.m4a in Resources */,
 				7D04FE90225B7F3100C566D7 /* vines_musor_v_solo.m4a in Resources */,
 				7D94CB5021F9C85D00ED9762 /* razrulil_prosto.m4a in Resources */,
 				7D94CB4721F9C85D00ED9762 /* kto_eto_chto_eto_za_musor.m4a in Resources */,
+				7DF4500623BBE66600EDEA10 /* yasno.m4a in Resources */,
 				7DD4CAF8225BB3F500195074 /* bidlo.m4a in Resources */,
 				7D94CB9421F9C85D00ED9762 /* na_na.m4a in Resources */,
+				7DC7E2AB22B6D6DA006C7CEA /* chto_ya_sdelal.m4a in Resources */,
 				7D94CB5721F9C85D00ED9762 /* mnogohodovochka.m4a in Resources */,
+				7DF4500B23BBE66600EDEA10 /* strashno_virubay.m4a in Resources */,
 				7D94CBB121F9C85D00ED9762 /* krys.m4a in Resources */,
 				7DF59C9D22783DF900AE6A59 /* that_was_an_error.m4a in Resources */,
 				7D94CB9121F9C85D00ED9762 /* aaaa.m4a in Resources */,
@@ -727,6 +835,7 @@
 				7D94CB6221F9C85D00ED9762 /* dolboeb_zavis.m4a in Resources */,
 				7D94CB9921F9C85D00ED9762 /* na.m4a in Resources */,
 				7D94CBBA21F9CA7C00ED9762 /* i_am_legend.m4a in Resources */,
+				7DF4500023BBE66600EDEA10 /* shok_content.m4a in Resources */,
 				7D94CB4C21F9C85D00ED9762 /* smeh_5.m4a in Resources */,
 				7D69D80921FAF6D000BC7492 /* virki_jinki.m4a in Resources */,
 				7D21CE0C2260EC2F000DB5FC /* lejat-1.m4a in Resources */,
@@ -734,18 +843,22 @@
 				7DF59C9822783DF900AE6A59 /* vsem_lejat.m4a in Resources */,
 				7D94CBAB21F9C85D00ED9762 /* na_podyhayesh.m4a in Resources */,
 				7D94CBB021F9C85D00ED9762 /* smeh_8.m4a in Resources */,
+				7D937284230B052D00F47A69 /* lejat_plus_lejat.m4a in Resources */,
 				7D94CB5921F9C85D00ED9762 /* luchshiy_v_mire.m4a in Resources */,
 				7D94CB9A21F9C85D00ED9762 /* diakuju.m4a in Resources */,
 				7D94CB9F21F9C85D00ED9762 /* sori.m4a in Resources */,
 				7D94CB4521F9C85D00ED9762 /* solianovo_aaa.m4a in Resources */,
 				7D94CBAC21F9C85D00ED9762 /* nice_ya_frag_vzial.m4a in Resources */,
+				7DF4500A23BBE66600EDEA10 /* sporno.m4a in Resources */,
 				7D94CB8921F9C85D00ED9762 /* idu.m4a in Resources */,
+				7DF44FFF23BBE66600EDEA10 /* chto_smeshnogo.m4a in Resources */,
 				7D94CB7921F9C85D00ED9762 /* nenavizhu_dotu.m4a in Resources */,
 				7DF59C9F22783DF900AE6A59 /* smeemsya_vsem_klassom.m4a in Resources */,
 				7D94CB9D21F9C85D00ED9762 /* gore.m4a in Resources */,
 				7D94CBA221F9C85D00ED9762 /* hello.m4a in Resources */,
 				7D94CB8821F9C85D00ED9762 /* blya_vot_eto_da.m4a in Resources */,
 				7D94CB6721F9C85D00ED9762 /* smeh_7.m4a in Resources */,
+				7D93727D230B051F00F47A69 /* one_moment_plz.m4a in Resources */,
 				7D94CBAF21F9C85D00ED9762 /* puk_i_stuk_po_stolu.m4a in Resources */,
 				7D94CBA321F9C85D00ED9762 /* stuk_po_stolu_1.m4a in Resources */,
 				7D94CBB321F9C85D00ED9762 /* ne_igraite_v_dotu.m4a in Resources */,
@@ -756,14 +869,17 @@
 				7D94CBA121F9C85D00ED9762 /* sasat.m4a in Resources */,
 				7D94CB7521F9C85D00ED9762 /* izi_izi_izi.m4a in Resources */,
 				7D94CB5E21F9C85D00ED9762 /* kto_luchshiy_v_mire.m4a in Resources */,
+				7DF4500923BBE66600EDEA10 /* tupo_domoi.m4a in Resources */,
 				7D94CB6121F9C85D00ED9762 /* stuk_po_stolu_7.m4a in Resources */,
 				7D21CE082260EC2F000DB5FC /* roflan_gorit-1.m4a in Resources */,
+				7DC7E2AF22B6D6DA006C7CEA /* piymav_na_gendzutsy.m4a in Resources */,
 				7DF59C9622783DF900AE6A59 /* vsem_poka.m4a in Resources */,
 				7D94CBA621F9C85D00ED9762 /* smeh_11.m4a in Resources */,
 				7D94CB7121F9C85D00ED9762 /* tak_ce_zhorstko.m4a in Resources */,
 				7D94CB8521F9C85D00ED9762 /* luchshii.m4a in Resources */,
 				7D94CB7021F9C85D00ED9762 /* kuda_ty_sobralsa_na.m4a in Resources */,
 				7D94CB5A21F9C85D00ED9762 /* stuk_po_stolu_5.m4a in Resources */,
+				7DF44FFE23BBE66600EDEA10 /* chto_proishodit.m4a in Resources */,
 				7D94CBB521F9C85D00ED9762 /* davay_dolboyeb.m4a in Resources */,
 				7D90741021FA4841006466A2 /* da_eto_jestko.m4a in Resources */,
 				7D94CBAD21F9C85D00ED9762 /* smeh_2.m4a in Resources */,
@@ -775,6 +891,8 @@
 				7DF59C9522783DF900AE6A59 /* ya_debil.m4a in Resources */,
 				7D94CB7B21F9C85D00ED9762 /* shchas_by_kripa_ne_dobit.m4a in Resources */,
 				7D94CB8E21F9C85D00ED9762 /* haha_vot_eto_ls.m4a in Resources */,
+				7DC7E2AA22B6D6DA006C7CEA /* bababablabla.m4a in Resources */,
+				7D93727F230B051F00F47A69 /* podrubil_proveryaite.m4a in Resources */,
 				7D94CB8C21F9C85D00ED9762 /* izi_dlia_velichaishego.m4a in Resources */,
 				7D94CB8A21F9C85D00ED9762 /* rev_1.m4a in Resources */,
 				7DF59C9422783DF900AE6A59 /* skolko_pomoshi.m4a in Resources */,
@@ -790,6 +908,7 @@
 				7D94CBA821F9C85D00ED9762 /* opa.m4a in Resources */,
 				7D94CB9B21F9C85D00ED9762 /* stuk_po_stolu_10.m4a in Resources */,
 				7D94CB5D21F9C85D00ED9762 /* fucking_trash.m4a in Resources */,
+				7D937286230B052D00F47A69 /* lololo.m4a in Resources */,
 				7D94CB6A21F9C85D00ED9762 /* stuk_po_stolu_8.m4a in Resources */,
 				7D21CE0F2260EC2F000DB5FC /* chempion-1.m4a in Resources */,
 				7D90740D21FA4841006466A2 /* solevarnya.m4a in Resources */,
@@ -820,9 +939,11 @@
 				7D94CB5F21F9C85D00ED9762 /* krik_uuu.m4a in Resources */,
 				7D94CB7421F9C85D00ED9762 /* koshmar.m4a in Resources */,
 				7D04FE8B225B7F3100C566D7 /* alo_menya_slishno.m4a in Resources */,
+				7DF4500523BBE66600EDEA10 /* eh.m4a in Resources */,
 				7D94CB9321F9C85D00ED9762 /* sore_ty_v_ignore.m4a in Resources */,
 				7D94CB9021F9C85D00ED9762 /* ls_dcp.m4a in Resources */,
 				7D94CB4A21F9C85D00ED9762 /* zemlya_tebe_puhom.m4a in Resources */,
+				7DF4500323BBE66600EDEA10 /* eto_bila_oshibka.m4a in Resources */,
 				7D04FE95225B7F3100C566D7 /* obezyanich.m4a in Resources */,
 				7D94CB8721F9C85D00ED9762 /* legkost_bytiya.m4a in Resources */,
 				7D94CB5821F9C85D00ED9762 /* kg.m4a in Resources */,
@@ -830,6 +951,7 @@
 				7DBCA64321E2712D00A08DA4 /* Main.storyboard in Resources */,
 				7D90740B21FA4841006466A2 /* slojno.m4a in Resources */,
 				7D04FE98225B7F3100C566D7 /* opa_f_ku.m4a in Resources */,
+				7DC7E2A922B6D6D2006C7CEA /* vedmak.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,8 +962,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC7E2A022B6D2FC006C7CEA /* Purchases.swift in Sources */,
 				7DBCA63E21E2712D00A08DA4 /* AppDelegate.swift in Sources */,
 				7D94CAD121F9C83900ED9762 /* MainVC.swift in Sources */,
+				7D9E91C623BB5EAE00803031 /* Extensions.swift in Sources */,
 				7DBCA64621E2712D00A08DA4 /* ArthasVoice.xcdatamodeld in Sources */,
 				7D49FAB121E28B5A00168766 /* SoundTVC.swift in Sources */,
 				7DFF7DBB21EF9C5F005BFAB2 /* LikedSoundsVC.swift in Sources */,
@@ -999,6 +1123,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = ToMark1881.ArthasVoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1018,6 +1143,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = ToMark1881.ArthasVoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
