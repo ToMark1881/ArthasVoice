@@ -17,15 +17,7 @@ class MainVC: UIViewController {
     var sounds: [Sound] = []
     var filteredSounds = [Sound]()
     
-    let soundsTableView: UITableView = {
-        let tv = UITableView()
-        tv.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-        tv.rowHeight = 88 + 30
-        tv.separatorStyle = .none
-        tv.backgroundColor = LIGHT_BACKGROUND_COLOR
-        tv.separatorColor = UIColor.clear
-        return tv
-    }()
+    @IBOutlet weak var soundsTableView: UITableView!
     
     var resultSearchController = UISearchController()
     
@@ -148,18 +140,13 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         IMAGES.shuffle()
         print("\(SOUND_NAMES.count), \(SOUND_DECRIPTIONS.count)")
-        soundsTableView.delegate = self
-        soundsTableView.dataSource = self
-        soundsTableView.separatorStyle = .none
-        soundsTableView.backgroundColor = LIGHT_BACKGROUND_COLOR
-        soundsTableView.allowsSelection = false
-        soundsTableView.register(SoundTVC.self, forCellReuseIdentifier: soundCell)
+        soundsTableView.register(UINib(nibName: "SoundCell", bundle: nil), forCellReuseIdentifier: soundCell)
         self.view.addSubview(soundsTableView)
-        self.view.backgroundColor = LIGHT_BACKGROUND_COLOR
+        self.view.backgroundColor = BACK_COLOR
         self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationController?.title = "Звуки"
-        self.navigationController?.navigationBar.barTintColor = LIGHT_BACKGROUND_COLOR
-        self.navigationController?.navigationBar.backgroundColor = LIGHT_BACKGROUND_COLOR
+        self.title = "Звуки"
+        self.navigationController?.navigationBar.barTintColor = BACK_COLOR
+        self.navigationController?.navigationBar.backgroundColor = BACK_COLOR
         let sortButton = UIBarButtonItem(image: UIImage(named: "reverse"), style: .plain, target: self, action: #selector(reverseArray))
         sortButton.tintColor = LABEL_COLOR
         self.navigationItem.rightBarButtonItem = sortButton
@@ -181,9 +168,9 @@ class MainVC: UIViewController {
             controller.searchResultsUpdater = self
             controller.dimsBackgroundDuringPresentation = false
             controller.searchBar.sizeToFit()
-
+            controller.searchBar.backgroundColor = BACK_COLOR
+            controller.searchBar.barTintColor = BACK_COLOR
             soundsTableView.tableHeaderView = controller.searchBar
-
             return controller
         })()
         soundsTableView.reloadData()
@@ -224,32 +211,24 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = soundsTableView.dequeueReusableCell(withIdentifier: soundCell, for: indexPath) as! SoundTVC
+        let cell = soundsTableView.dequeueReusableCell(withIdentifier: soundCell, for: indexPath) as! SoundCell
         let sound = self.resultSearchController.isActive ? filteredSounds[indexPath.row] : sounds[indexPath.row]
         cell.soundName.text = sound.desc
         cell.favButton.tag = indexPath.row
         cell.playButton.tag = indexPath.row
         cell.shareButton.tag = indexPath.row
-        cell.favButton.addTarget(self, action: #selector(addToFav(_:)), for: .touchUpInside)
-        cell.playButton.addTarget(self, action: #selector(play(_:)), for: .touchUpInside)
-        cell.shareButton.addTarget(self, action: #selector(share(_:)), for: .touchUpInside)
+        cell.shareAction = { self.share(cell.shareButton) }
+        cell.playAction = { self.play(cell.playButton) }
+        cell.favAction = { self.addToFav(cell.favButton) }
         
-        let index = indexPath.row + 1
-        let mod = index % COLORS.count
-        cell.backView.backgroundColor = COLORS[mod]
-        //cell.backView.addGradientBackground(firstColor: MainVC.gradients[mod][0], secondColor: MainVC.gradients[mod][1])
-        cell.backView.dropShadow()
-        cell.shareButton.tintColor = UIColor.white.withAlphaComponent(0.8)
-        cell.playButton.tintColor = UIColor.white.withAlphaComponent(0.8)
-        cell.soundName.textColor = UIColor.white.withAlphaComponent(0.8)
-        
+        cell.backView.backgroundColor = BACK_COLOR
         let imageMod = (indexPath.row + 1) % IMAGES.count
         cell.iconImageView.image = UIImage(named: IMAGES[imageMod])
         if sound.isLiked {
-            cell.favButton.tintColor = UIColor.black.withAlphaComponent(0.8)
+            cell.favButton.tintColor = .black
         }
         else {
-            cell.favButton.tintColor = UIColor.white.withAlphaComponent(0.8)
+            cell.favButton.tintColor = .systemRed
         }
         return cell
     }

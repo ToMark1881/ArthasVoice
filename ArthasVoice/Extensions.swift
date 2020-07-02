@@ -9,14 +9,90 @@
 import Foundation
 import UIKit
 
+extension UIButton {
+    
+    override open var isHighlighted: Bool {
+        didSet {
+            if isHighlighted {
+                setState()
+            } else {
+                resetState()
+            }
+        }
+    }
+    
+    override open var isEnabled: Bool {
+        didSet{
+            if isEnabled == false {
+                setState()
+            } else {
+                resetState()
+            }
+        }
+    }
+    
+    func setState(){
+        self.layer.shadowOffset = CGSize(width: -2, height: -2)
+        self.layer.sublayers?[0].shadowOffset = CGSize(width: 2, height: 2)
+        self.contentEdgeInsets = UIEdgeInsets(top: 2, left: 2, bottom: 0, right: 0)
+    }
+    
+    func resetState(){
+        self.layer.shadowOffset = CGSize(width: 2, height: 2)
+        self.layer.sublayers?[0].shadowOffset = CGSize(width: -2, height: -2)
+        self.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 2, right: 2)
+    }
+    
+    public func addSoftUIEffectForButton(cornerRadius: CGFloat = 15.0, themeColor: UIColor = UIColor(red: 241/255, green: 243/255, blue: 246/255, alpha: 1.0)) {
+        self.layer.cornerRadius = cornerRadius
+        self.layer.masksToBounds = false
+        self.layer.shadowRadius = 2
+        self.layer.shadowOpacity = 1
+        self.layer.shadowOffset = CGSize( width: 2, height: 2)
+        self.layer.shadowColor = UIColor(red: 223/255, green: 228/255, blue: 238/255, alpha: 1.0).cgColor
+        
+        let shadowLayer = CAShapeLayer()
+        shadowLayer.frame = bounds
+        shadowLayer.backgroundColor = themeColor.cgColor
+        shadowLayer.shadowColor = UIColor.white.cgColor
+        shadowLayer.cornerRadius = cornerRadius
+        shadowLayer.shadowOffset = CGSize(width: -2.0, height: -2.0)
+        shadowLayer.shadowOpacity = 1
+        shadowLayer.shadowRadius = 2
+        self.layer.insertSublayer(shadowLayer, below: self.imageView?.layer)
+    }
+}
+
+extension UIView {
+    
+    public func addSoftUIEffectForView(cornerRadius: CGFloat = 15.0, themeColor: UIColor = UIColor(red: 241/255, green: 243/255, blue: 246/255, alpha: 1.0), shadowRadius: CGFloat = 2.0) {
+        self.layer.cornerRadius = cornerRadius
+        self.layer.masksToBounds = false
+        self.layer.shadowRadius = 2
+        self.layer.shadowOpacity = 1
+        self.layer.shadowOffset = CGSize(width: shadowRadius, height: shadowRadius)
+        self.layer.shadowColor = UIColor(red: 223/255, green: 228/255, blue: 238/255, alpha: 1.0).cgColor
+        
+        let shadowLayer = CAShapeLayer()
+        shadowLayer.frame = bounds
+        shadowLayer.backgroundColor = themeColor.cgColor
+        shadowLayer.shadowColor = UIColor.white.cgColor
+        shadowLayer.cornerRadius = cornerRadius
+        shadowLayer.shadowOffset = CGSize(width: -shadowRadius, height: -shadowRadius)
+        shadowLayer.shadowOpacity = 1
+        shadowLayer.shadowRadius = 2
+        self.layer.insertSublayer(shadowLayer, at: 0)
+    }
+}
+
 let COLORS = [UIColor(displayP3Red: 105/255, green: 212/255, blue: 97/255, alpha: 1),
-               UIColor(displayP3Red: 114/255, green: 87/255, blue: 223/255, alpha: 1),
-               UIColor(displayP3Red: 119/255, green: 137/255, blue: 199/255, alpha: 1),
-               UIColor(displayP3Red: 137/255, green: 154/255, blue: 149/255, alpha: 1),
-               UIColor(displayP3Red: 101/255, green: 174/255, blue: 36/255, alpha: 1),
-               UIColor(displayP3Red: 70/255, green: 100/255, blue: 76/255, alpha: 1),
-               UIColor(displayP3Red: 227/255, green: 45/255, blue: 49/255, alpha: 1),
-               UIColor(displayP3Red: 187/255, green: 76/255, blue: 31/255, alpha: 1)]
+              UIColor(displayP3Red: 114/255, green: 87/255, blue: 223/255, alpha: 1),
+              UIColor(displayP3Red: 119/255, green: 137/255, blue: 199/255, alpha: 1),
+              UIColor(displayP3Red: 137/255, green: 154/255, blue: 149/255, alpha: 1),
+              UIColor(displayP3Red: 101/255, green: 174/255, blue: 36/255, alpha: 1),
+              UIColor(displayP3Red: 70/255, green: 100/255, blue: 76/255, alpha: 1),
+              UIColor(displayP3Red: 227/255, green: 45/255, blue: 49/255, alpha: 1),
+              UIColor(displayP3Red: 187/255, green: 76/255, blue: 31/255, alpha: 1)]
 
 let GRADIENTS: [[UIColor]] = [
     [UIColor(red: 212, green: 252, blue: 121), UIColor(red: 150, green: 230, blue: 161)],
@@ -50,6 +126,10 @@ let LABEL_COLOR: UIColor = {
         c = UIColor.label
     }
     return c
+}()
+
+let BACK_COLOR: UIColor = {
+    return UIColor(red: 241/255, green: 243/255, blue: 246/255, alpha: 1.0)
 }()
 
 

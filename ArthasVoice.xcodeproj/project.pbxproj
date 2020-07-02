@@ -172,6 +172,8 @@
 		7D94CBB721F9C85D00ED9762 /* oy_oy_oy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CB4421F9C85D00ED9762 /* oy_oy_oy.m4a */; };
 		7D94CBBA21F9CA7C00ED9762 /* i_am_legend.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CBB921F9CA7C00ED9762 /* i_am_legend.m4a */; };
 		7D9E91C623BB5EAE00803031 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E91C523BB5EAE00803031 /* Extensions.swift */; };
+		7DA72E4E24ADE63400909042 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA72E4C24ADE63400909042 /* SoundCell.swift */; };
+		7DA72E4F24ADE63400909042 /* SoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DA72E4D24ADE63400909042 /* SoundCell.xib */; };
 		7DBCA63E21E2712D00A08DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCA63D21E2712D00A08DA4 /* AppDelegate.swift */; };
 		7DBCA64321E2712D00A08DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DBCA64121E2712D00A08DA4 /* Main.storyboard */; };
 		7DBCA64621E2712D00A08DA4 /* ArthasVoice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCA64421E2712D00A08DA4 /* ArthasVoice.xcdatamodeld */; };
@@ -386,6 +388,8 @@
 		7D94CB4421F9C85D00ED9762 /* oy_oy_oy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = oy_oy_oy.m4a; sourceTree = "<group>"; };
 		7D94CBB921F9CA7C00ED9762 /* i_am_legend.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = i_am_legend.m4a; sourceTree = "<group>"; };
 		7D9E91C523BB5EAE00803031 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7DA72E4C24ADE63400909042 /* SoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
+		7DA72E4D24ADE63400909042 /* SoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundCell.xib; sourceTree = "<group>"; };
 		7DBCA63A21E2712D00A08DA4 /* ArthasVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArthasVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBCA63D21E2712D00A08DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DBCA64221E2712D00A08DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -675,6 +679,8 @@
 			children = (
 				7D94CBB821F9C8A700ED9762 /* ArthasSounds */,
 				7D49FAB021E28B5A00168766 /* SoundTVC.swift */,
+				7DA72E4C24ADE63400909042 /* SoundCell.swift */,
+				7DA72E4D24ADE63400909042 /* SoundCell.xib */,
 				7D9E91C523BB5EAE00803031 /* Extensions.swift */,
 				7DBCA63D21E2712D00A08DA4 /* AppDelegate.swift */,
 				7DFF7DBA21EF9C5F005BFAB2 /* LikedSoundsVC.swift */,
@@ -856,6 +862,7 @@
 				7DF59C9F22783DF900AE6A59 /* smeemsya_vsem_klassom.m4a in Resources */,
 				7D94CB9D21F9C85D00ED9762 /* gore.m4a in Resources */,
 				7D94CBA221F9C85D00ED9762 /* hello.m4a in Resources */,
+				7DA72E4F24ADE63400909042 /* SoundCell.xib in Resources */,
 				7D94CB8821F9C85D00ED9762 /* blya_vot_eto_da.m4a in Resources */,
 				7D94CB6721F9C85D00ED9762 /* smeh_7.m4a in Resources */,
 				7D93727D230B051F00F47A69 /* one_moment_plz.m4a in Resources */,
@@ -965,6 +972,7 @@
 				7DC7E2A022B6D2FC006C7CEA /* Purchases.swift in Sources */,
 				7DBCA63E21E2712D00A08DA4 /* AppDelegate.swift in Sources */,
 				7D94CAD121F9C83900ED9762 /* MainVC.swift in Sources */,
+				7DA72E4E24ADE63400909042 /* SoundCell.swift in Sources */,
 				7D9E91C623BB5EAE00803031 /* Extensions.swift in Sources */,
 				7DBCA64621E2712D00A08DA4 /* ArthasVoice.xcdatamodeld in Sources */,
 				7D49FAB121E28B5A00168766 /* SoundTVC.swift in Sources */,

@@ -16,7 +16,7 @@ class SoundTVC: UITableViewCell {
         v.layoutIfNeeded()
         v.clipsToBounds = true
         v.layer.cornerRadius = 15
-        v.backgroundColor = LIGHT_BACKGROUND_COLOR
+        v.backgroundColor = BACK_COLOR
         //v.dropShadow()
         return v
     }()
@@ -29,7 +29,7 @@ class SoundTVC: UITableViewCell {
     let soundName: UILabel = {
         let lbl = UILabel()
         lbl.font = UIFont(name: "HelveticaNeue", size: 20)
-        lbl.textColor = LABEL_COLOR
+        lbl.textColor = .black
         lbl.adjustsFontSizeToFitWidth = true
         lbl.minimumScaleFactor = 0.2
         return lbl
@@ -72,7 +72,7 @@ class SoundTVC: UITableViewCell {
         self.frame.size.width = UIScreen.main.bounds.width
         backView.frame = CGRect(x: 15, y: 10, width: self.frame.width - 30, height: self.frame.height - 20)
         addSubview(backView)
-        self.backgroundColor = LIGHT_BACKGROUND_COLOR
+        self.backgroundColor = BACK_COLOR
         iconImageView.frame = CGRect(x: 12, y: 12, width: 64, height: 64)
         iconImageView.contentMode = .scaleAspectFill
         backView.addSubview(iconImageView)

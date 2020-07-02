@@ -152,10 +152,10 @@ class InfoVC: UIViewController {
     override func viewDidLoad() {
         guard let bottomBar = self.navigationController?.tabBarController?.tabBar.frame else { return }
         super.viewDidLoad()
-        self.view.backgroundColor = LIGHT_BACKGROUND_COLOR
+        self.view.backgroundColor = BACK_COLOR
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.navigationController?.title = "Другое"
-        self.navigationController?.navigationBar.barTintColor = LIGHT_BACKGROUND_COLOR
+        self.navigationController?.navigationBar.barTintColor = BACK_COLOR
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 18)!]
         if #available(iOS 11.0, *) {
             self.navigationController?.navigationBar.prefersLargeTitles = true

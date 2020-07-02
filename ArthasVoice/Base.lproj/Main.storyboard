@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7xd-b3-csf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7xd-b3-csf">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,14 +31,34 @@
                     <view key="view" contentMode="scaleToFill" id="mvc-mi-0rN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="192" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xbU-Zi-fQc">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.94509803920000002" green="0.95294117649999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ThJ-rY-yhS" id="IKj-qL-J6d"/>
+                                    <outlet property="delegate" destination="ThJ-rY-yhS" id="L8L-QP-jwY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xbU-Zi-fQc" firstAttribute="top" secondItem="Okc-pP-HIV" secondAttribute="top" id="Fqn-fR-fFF"/>
+                            <constraint firstItem="xbU-Zi-fQc" firstAttribute="leading" secondItem="Okc-pP-HIV" secondAttribute="leading" id="RoV-7U-gcx"/>
+                            <constraint firstItem="xbU-Zi-fQc" firstAttribute="trailing" secondItem="Okc-pP-HIV" secondAttribute="trailing" id="sv5-4m-pDa"/>
+                            <constraint firstItem="xbU-Zi-fQc" firstAttribute="bottom" secondItem="Okc-pP-HIV" secondAttribute="bottom" id="yWS-kN-wRj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Okc-pP-HIV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Звуки" id="wZ4-9V-k1v"/>
+                    <connections>
+                        <outlet property="soundsTableView" destination="xbU-Zi-fQc" id="lb9-UM-Pij"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16D-Oy-uIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46" y="-896"/>
+            <point key="canvasLocation" x="45.600000000000001" y="-896.40179910044981"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8nV-Re-hKa">
