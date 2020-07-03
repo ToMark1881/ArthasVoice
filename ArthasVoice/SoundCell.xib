@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKA-4L-TxY">
-                        <rect key="frame" x="20" y="20" width="331" height="152"/>
+                        <rect key="frame" x="26" y="20" width="319" height="152"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcN-i0-KW6">
                                 <rect key="frame" x="8" y="8" width="74" height="74"/>
@@ -40,24 +41,24 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text ВАхвах хыжад фывлфщывт фыв " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUo-91-quq">
-                                <rect key="frame" x="102" y="0.0" width="229" height="74"/>
+                                <rect key="frame" x="102" y="0.0" width="217" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="4cZ-kJ-VeF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9N-x9-5ut">
-                                <rect key="frame" x="8" y="102" width="315" height="30"/>
+                                <rect key="frame" x="8" y="102" width="303" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62C-1K-aVl">
-                                        <rect key="frame" x="133.5" y="-9" width="48" height="48"/>
+                                        <rect key="frame" x="127.5" y="-9" width="48" height="48"/>
+                                        <color key="backgroundColor" name="BackColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="H6m-ST-7ja"/>
                                             <constraint firstAttribute="height" constant="48" id="RAD-HB-rtQ"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
                                         <state key="normal" image="play"/>
                                         <connections>
@@ -66,6 +67,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMc-ZX-iAk">
                                         <rect key="frame" x="12" y="-9" width="48" height="48"/>
+                                        <color key="backgroundColor" name="BackColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="9kp-bl-Kx8"/>
                                             <constraint firstAttribute="height" constant="48" id="gG2-vY-Q2X"/>
@@ -78,12 +80,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cej-7N-kmp">
-                                        <rect key="frame" x="255" y="-9" width="48" height="48"/>
+                                        <rect key="frame" x="243" y="-9" width="48" height="48"/>
+                                        <color key="backgroundColor" name="BackColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="RzQ-bF-GUV"/>
                                             <constraint firstAttribute="height" constant="48" id="ph1-Xo-VUU"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
                                         <state key="normal" image="share"/>
                                         <connections>
@@ -102,7 +105,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="BackColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="V9N-x9-5ut" secondAttribute="trailing" constant="8" id="5nf-4M-YRv"/>
                             <constraint firstAttribute="bottom" secondItem="V9N-x9-5ut" secondAttribute="bottom" constant="20" id="A8l-sf-fDH"/>
@@ -116,12 +119,12 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="0.94509803921568625" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" name="BackColor"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="nKA-4L-TxY" secondAttribute="bottom" constant="20" id="BcR-WC-2N3"/>
-                    <constraint firstAttribute="trailing" secondItem="nKA-4L-TxY" secondAttribute="trailing" constant="20" id="c0h-CW-lKL"/>
+                    <constraint firstAttribute="trailing" secondItem="nKA-4L-TxY" secondAttribute="trailing" constant="26" id="c0h-CW-lKL"/>
                     <constraint firstItem="nKA-4L-TxY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="dYL-sp-xax"/>
-                    <constraint firstItem="nKA-4L-TxY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kjk-Ol-oCA"/>
+                    <constraint firstItem="nKA-4L-TxY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="kjk-Ol-oCA"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -137,9 +140,12 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="fav" width="33.333332061767578" height="33.333332061767578"/>
-        <image name="play" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="fav" width="30" height="30"/>
+        <image name="play" width="30" height="30"/>
         <image name="roflanBatya" width="512" height="512"/>
         <image name="share" width="32" height="32"/>
+        <namedColor name="BackColor">
+            <color red="0.94509803921568625" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

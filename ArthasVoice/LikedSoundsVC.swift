@@ -21,9 +21,9 @@ class LikedSoundsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     let soundsTableView: UITableView = {
         let tv = UITableView()
         tv.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-        tv.rowHeight = 88 + 30
+        tv.rowHeight = 198
         tv.separatorStyle = .none
-        tv.backgroundColor = BACK_COLOR
+        tv.backgroundColor = UIColor(named: "BackColor")
         tv.separatorColor = UIColor.clear
         return tv
     }()
@@ -39,38 +39,17 @@ class LikedSoundsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = soundsTableView.dequeueReusableCell(withIdentifier: soundCell, for: indexPath) as! SoundTVC
-        cell.soundName.text = likedSounds[indexPath.row].desc
-        cell.favButton.tag = indexPath.row
-        cell.playButton.tag = indexPath.row
-        cell.shareButton.tag = indexPath.row
-        cell.favButton.addTarget(self, action: #selector(addToFav(_:)), for: .touchUpInside)
-        cell.playButton.addTarget(self, action: #selector(play(_:)), for: .touchUpInside)
-        cell.shareButton.addTarget(self, action: #selector(share(_:)), for: .touchUpInside)
-        
-        let index = indexPath.row + 1
-        let mod = index % COLORS.count
-        cell.backView.backgroundColor = COLORS[mod]
-        cell.shareButton.tintColor = UIColor.white.withAlphaComponent(0.8)
-        cell.playButton.tintColor = UIColor.white.withAlphaComponent(0.8)
-        cell.soundName.textColor = UIColor.white.withAlphaComponent(0.8)
-        
-        let imageMod = (indexPath.row + 1) % images.count
-        cell.iconImageView.image = UIImage(named: images[imageMod])
-        
-        
-        if likedSounds[indexPath.row].isLiked {
-            cell.favButton.tintColor = UIColor.black.withAlphaComponent(0.8)
-        }
-        else {
-            cell.favButton.tintColor = UIColor.white.withAlphaComponent(0.8)
-        }
-        
+        let cell = soundsTableView.dequeueReusableCell(withIdentifier: soundCell, for: indexPath) as! SoundCell
+        let sound = likedSounds[indexPath.row]
+        cell.soundDelegate = self
+        cell.sound = sound
+        let imageMod = (indexPath.row + 1) % IMAGES.count
+        cell.iconImageView.image = UIImage(named: IMAGES[imageMod])
         return cell
     }
     
-    @objc private func share(_ sender: UIButton) {
-        let fileName = likedSounds[sender.tag].name
+    @objc private func share(_ sound: Sound) {
+        let fileName = sound.name
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "m4a") else {return}
         let activityVC = UIActivityViewController(activityItems: [url],applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
@@ -78,27 +57,31 @@ class LikedSoundsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     
-    @objc private func play(_ sender: UIButton) {
-        let fileName = likedSounds[sender.tag].name
+    @objc private func play(_ sound: Sound) {
+        player?.stop()
+        let fileName = sound.name
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "m4a") else { return }
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playback)), mode: .default)
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
-            
-            player = try AVAudioPlayer(contentsOf: url)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp4.rawValue)
+
             guard let player = player else { return }
-            
+
             player.play()
         } catch let error {
             print(error.localizedDescription)
         }
-        
+
     }
-    @objc private func addToFav(_ sender: UIButton) {
-        let sound = likedSounds[sender.tag]
+    
+    @objc private func addToFav(_ sound: Sound) {
         sound.isLiked.toggle()
-        likedSounds.remove(at: sender.tag)
-        let indexPath = IndexPath(row: sender.tag, section: 0)
+        let index = likedSounds.firstIndex(of: sound)!
+        likedSounds.remove(at: index)
+        let indexPath = IndexPath(row: index, section: 0)
         soundsTableView.deleteRows(at: [indexPath], with: .fade)
         soundsTableView.reloadData()
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -149,20 +132,11 @@ class LikedSoundsVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         soundsTableView.delegate = self
         soundsTableView.dataSource = self
         soundsTableView.separatorStyle = .none
-        soundsTableView.backgroundColor = BACK_COLOR
+        soundsTableView.backgroundColor = UIColor(named: "BackColor")
         soundsTableView.allowsSelection = false
-        soundsTableView.register(SoundTVC.self, forCellReuseIdentifier: soundCell)
+        soundsTableView.register(UINib(nibName: "SoundCell", bundle: nil), forCellReuseIdentifier: soundCell)
         self.view.addSubview(soundsTableView)
-        self.view.backgroundColor = BACK_COLOR
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationController?.title = "Избранное"
-        self.navigationController?.navigationBar.barTintColor = BACK_COLOR
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 18)!]
-        if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.prefersLargeTitles = true
-        } else {
-            // Fallback on earlier versions
-        }
+        self.view.backgroundColor = UIColor(named: "BackColor")
     }
 }
 
@@ -174,7 +148,7 @@ extension UITableView {
     func setEmptyMessage(_ message: String) {
         let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
         messageLabel.text = message
-        messageLabel.textColor = .black
+        messageLabel.textColor = UIColor(named: "TextColor")
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = .center
         messageLabel.font = UIFont(name: "HelveticaNeue", size: 22)
@@ -191,4 +165,21 @@ extension UITableView {
         self.backgroundView = nil
         self.separatorStyle = .none
     }
+}
+
+extension LikedSoundsVC: SoundCellDelegate {
+    
+    func didTapOnPlayButton(_ sound: Sound?) {
+        if let sound = sound { self.play(sound) }
+    }
+    
+    func didTapOnFavoriteButton(_ sound: Sound?) {
+        if let sound = sound { self.addToFav(sound) }
+    }
+    
+    func didTapOnShareButton(_ sound: Sound?) {
+        if let sound = sound { self.share(sound) }
+        
+    }
+    
 }

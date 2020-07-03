@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol SoundCellDelegate: class {
+    func didTapOnPlayButton(_ sound: Sound?)
+    func didTapOnFavoriteButton(_ sound: Sound?)
+    func didTapOnShareButton(_ sound: Sound?)
+}
+
 class SoundCell: UITableViewCell {
 
     @IBOutlet weak var backView: UIView!
@@ -16,21 +22,37 @@ class SoundCell: UITableViewCell {
     @IBOutlet weak var favButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
-    
-    var playAction: (() -> Void)?
-    var favAction: (() -> Void)?
-    var shareAction: (() -> Void)?
-    
-    
-    @IBAction func didTapFavoriteButton(_ sender: Any) {
-        self.favAction?()
+
+    public var sound: Sound? {
+        didSet {
+            setupView()
+        }
     }
-    @IBAction func didTapPlayButton(_ sender: Any) {
-        self.playAction?()
+    
+    weak var soundDelegate: SoundCellDelegate?
+    
+    
+    @IBAction func didTapFavoriteButton(_ sender: UIButton) {
+        sender.setState()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            sender.resetState()
+        }
+        self.soundDelegate?.didTapOnFavoriteButton(sound)
+    }
+    @IBAction func didTapPlayButton(_ sender: UIButton) {
+        sender.setState()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            sender.resetState()
+        }
+        self.soundDelegate?.didTapOnPlayButton(sound)
         
     }
-    @IBAction func didTapShareButton(_ sender: Any) {
-        self.shareAction?()
+    @IBAction func didTapShareButton(_ sender: UIButton) {
+        sender.setState()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            sender.resetState()
+        }
+        self.soundDelegate?.didTapOnShareButton(sound)
     }
     
     override func awakeFromNib() {
@@ -51,12 +73,19 @@ class SoundCell: UITableViewCell {
         super.prepareForReuse()
     }
     
+    func setupView() {
+        guard let sound = sound else { return }
+        if sound.isLiked { favButton.tintColor = .black }
+        else { favButton.tintColor = .systemRed }
+        soundName.text = sound.desc
+    }
+    
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
-        backView.addSoftUIEffectForView()
-        favButton.addSoftUIEffectForButton()
-        playButton.addSoftUIEffectForButton()
-        shareButton.addSoftUIEffectForButton()
+        backView.addSoftUIEffectForView(width: SCREEN_SIZE.width - 52)
+        favButton.addSoftUIEffectForButton(cornerRadius: 24)
+        playButton.addSoftUIEffectForButton(cornerRadius: 24)
+        shareButton.addSoftUIEffectForButton(cornerRadius: 24)
     }
     
 }

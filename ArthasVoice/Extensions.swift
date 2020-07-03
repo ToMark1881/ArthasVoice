@@ -11,50 +11,30 @@ import UIKit
 
 extension UIButton {
     
-    override open var isHighlighted: Bool {
-        didSet {
-            if isHighlighted {
-                setState()
-            } else {
-                resetState()
-            }
-        }
-    }
-    
-    override open var isEnabled: Bool {
-        didSet{
-            if isEnabled == false {
-                setState()
-            } else {
-                resetState()
-            }
-        }
-    }
-    
-    func setState(){
+    func setState() {
         self.layer.shadowOffset = CGSize(width: -2, height: -2)
         self.layer.sublayers?[0].shadowOffset = CGSize(width: 2, height: 2)
         self.contentEdgeInsets = UIEdgeInsets(top: 2, left: 2, bottom: 0, right: 0)
     }
     
-    func resetState(){
+    func resetState() {
         self.layer.shadowOffset = CGSize(width: 2, height: 2)
         self.layer.sublayers?[0].shadowOffset = CGSize(width: -2, height: -2)
         self.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 2, right: 2)
     }
     
-    public func addSoftUIEffectForButton(cornerRadius: CGFloat = 15.0, themeColor: UIColor = UIColor(red: 241/255, green: 243/255, blue: 246/255, alpha: 1.0)) {
+    public func addSoftUIEffectForButton(cornerRadius: CGFloat = 15.0, themeColor: UIColor = UIColor(named: "BackColor")!) {
         self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = false
         self.layer.shadowRadius = 2
         self.layer.shadowOpacity = 1
-        self.layer.shadowOffset = CGSize( width: 2, height: 2)
-        self.layer.shadowColor = UIColor(red: 223/255, green: 228/255, blue: 238/255, alpha: 1.0).cgColor
+        self.layer.shadowOffset = CGSize(width: 2, height: 2)
+        self.layer.shadowColor = UIColor(named: "BottomShadow")?.cgColor
         
         let shadowLayer = CAShapeLayer()
         shadowLayer.frame = bounds
         shadowLayer.backgroundColor = themeColor.cgColor
-        shadowLayer.shadowColor = UIColor.white.cgColor
+        shadowLayer.shadowColor = UIColor(named: "TopShadow")?.cgColor
         shadowLayer.cornerRadius = cornerRadius
         shadowLayer.shadowOffset = CGSize(width: -2.0, height: -2.0)
         shadowLayer.shadowOpacity = 1
@@ -65,45 +45,27 @@ extension UIButton {
 
 extension UIView {
     
-    public func addSoftUIEffectForView(cornerRadius: CGFloat = 15.0, themeColor: UIColor = UIColor(red: 241/255, green: 243/255, blue: 246/255, alpha: 1.0), shadowRadius: CGFloat = 2.0) {
+    public func addSoftUIEffectForView(cornerRadius: CGFloat = 15.0, themeColor: UIColor = UIColor(named: "BackColor")!, shadowRadius: CGFloat = 2.0, opacity: Float = 1, width: CGFloat? = nil) {
         self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = false
-        self.layer.shadowRadius = 2
-        self.layer.shadowOpacity = 1
+        self.layer.shadowRadius = shadowRadius
+        self.layer.shadowOpacity = opacity
         self.layer.shadowOffset = CGSize(width: shadowRadius, height: shadowRadius)
-        self.layer.shadowColor = UIColor(red: 223/255, green: 228/255, blue: 238/255, alpha: 1.0).cgColor
+        self.layer.shadowColor = UIColor(named: "BottomShadow")?.cgColor //bottom shadow
         
         let shadowLayer = CAShapeLayer()
-        shadowLayer.frame = bounds
+        shadowLayer.frame = CGRect(x: 0, y: 0, width: width ?? self.bounds.width, height: self.bounds.height)
         shadowLayer.backgroundColor = themeColor.cgColor
-        shadowLayer.shadowColor = UIColor.white.cgColor
+        shadowLayer.shadowColor = UIColor(named: "TopShadow")?.cgColor
         shadowLayer.cornerRadius = cornerRadius
         shadowLayer.shadowOffset = CGSize(width: -shadowRadius, height: -shadowRadius)
-        shadowLayer.shadowOpacity = 1
-        shadowLayer.shadowRadius = 2
+        shadowLayer.shadowOpacity = opacity
+        shadowLayer.shadowRadius = shadowRadius //top shadow
         self.layer.insertSublayer(shadowLayer, at: 0)
     }
 }
 
-let COLORS = [UIColor(displayP3Red: 105/255, green: 212/255, blue: 97/255, alpha: 1),
-              UIColor(displayP3Red: 114/255, green: 87/255, blue: 223/255, alpha: 1),
-              UIColor(displayP3Red: 119/255, green: 137/255, blue: 199/255, alpha: 1),
-              UIColor(displayP3Red: 137/255, green: 154/255, blue: 149/255, alpha: 1),
-              UIColor(displayP3Red: 101/255, green: 174/255, blue: 36/255, alpha: 1),
-              UIColor(displayP3Red: 70/255, green: 100/255, blue: 76/255, alpha: 1),
-              UIColor(displayP3Red: 227/255, green: 45/255, blue: 49/255, alpha: 1),
-              UIColor(displayP3Red: 187/255, green: 76/255, blue: 31/255, alpha: 1)]
-
-let GRADIENTS: [[UIColor]] = [
-    [UIColor(red: 212, green: 252, blue: 121), UIColor(red: 150, green: 230, blue: 161)],
-    [UIColor(red: 79, green: 172, blue: 254), UIColor(red: 0, green: 242, blue: 254)],
-    [UIColor(red: 245, green: 247, blue: 250), UIColor(red: 195, green: 207, blue: 226)],
-    [UIColor(red: 253, green: 219, blue: 146), UIColor(red: 209, green: 253, blue: 255)],
-    [UIColor(red: 72, green: 198, blue: 239), UIColor(red: 111, green: 134, blue: 214)],
-    [UIColor(red: 11, green: 163, blue: 96), UIColor(red: 60, green: 186, blue: 146)],
-    [UIColor(red: 163, green: 189, blue: 237), UIColor(red: 105, green: 145, blue: 199)],
-    [UIColor(red: 255, green: 8, blue: 68), UIColor(red: 255, green: 177, blue: 153)]
-]
+var SCREEN_SIZE = UIScreen.main.bounds
 
 var IMAGES = ["roflanBatya", "roflanBuldiga", "roflanChervyak", "roflanCoolStory", "roflanDaunich", "roflanDulya", "roflanDulyaEbalo", "roflanEbalo", "roflanGantelya", "roflanHm", "roflanHmm", "roflanKomment", "roflanKrasniy", "roflanKrik", "roflanKurtka", "roflanOru", "roflanPominki", "roflanPomoika", "roflanPzdc", "roflanStrashno", "roflanTsar", "roflanUkr", "roflanUvajenie"]
 
@@ -112,24 +74,8 @@ var SOUND_NAMES = ["aaaa", "da", "dada", "diakuju", "back", "dlia_menia_eto_ray"
 
 var SOUND_DECRIPTIONS = ["Ха-ха", "Да", "Да-да да-да-да", "Дякую, тварина", "Back!", "Для меня это рай", "Это конец", "Фиксирую", "Горе побеждённым", "Вот это лс", "Hello!", "Help!", "Heeelp!", "Я їду додому", "Изи для величайшего", "Изи, изи, изи", "Классно (нет)", "Кошмар!", "Ууу", "Крит! Нужен крит", "Что это за мусор?", "Кто лучший в мире?", "Куда ты собрался?!", "Лёгкость бытия", "Лучший в мире за работой", "M-m-m-m-monsterkill", "На! На! Наа!", "Ныа!", "Ныыыааа!", "Не играйте в доту", "Ненавижу доту", "Найс, я фраг взял", "Наа!", "Оп, изи", "Оп, изи 2", "Победа близка", "Пффф", "Разрулил", "Рёв", "Рёв 2", "Рёв 3", "Сейчас я буду резать", "Сейчас бы крипа не добить", "В соло", "Сюда подошел", "Слишком изи", "Смех", "Смех 2", "Смех 3", "Смех 4", "Смех 5", "Смех 6", "Смех 7", "Смех 8",  "Смех 9 ", "Смех 10", "Смех 11", "Сольный концерт by Папич", "Соре, ты в игноре", "Сорри", "Стук", "Стук 2", "Так, це жорстко", "Уууу, что это?", "VIKA", "Я не умру", "Я не вижу крипов", "Я тут, гайз", "Зафиксировал", "I am Legend!", "Dobry początek", "Опа Ф5", "Анализ сил", "Да, это жёстко", "Нет настроения", "Сложно", "Солеварня", "Сомнительная информация", "Yeah", "Вирки джинки", "Ааыы", "Активируем скилл", "Алло, меня слышно?", "Апельсины", "Быть Папизи...", "Дратути", "Hidden lool", "Incredible", "О, вы из центра", "Обезьяныч", "Опа, Ф-ку", "Плюс ноль", "Посмеялись", "Привет, работяги", "Совпадение? Не думаю", "Страшно, вырубай", "Вернулся из небытия", "Вынес мусор в соло", "Здарова, Пукич", "Быдло", "Баланс", "Чемпион", "Что вы делаете?", "Король вернулся", "Ты куда?", "Лежать", "Оп, мизантроп", "Пахнет солярой", "roflanGorit", "roflanPoel", "Щито поделать?", "Шнырь курьер", "Сколько помощи?", "Смеемся всем классом", "That was an error", "Ты кто? Помойка", "Тутутуту", "Урсич", "Всем лежать", "Всем пока", "Що мені робити? Вмерти чи жити?", "Умри", "Soul", "Засолено", "Здарова", "Ведьмак?", "Аблалалаба", "Что я сделал? Нееет!", "I will cruch You!", "Кулити", "Мочи урода", "Піймав на гендзюццу", "Следующий", "На дебилычах", "One moment plz", "Подрубил, проверяйте", "100/10", "Куда, очередняры?", "Лежать плюс лежать", "LoLoLo", "Что происходит?", "Что смешного?", "Эх", "Это была ошибка", "Шок-контент", "Шок", "Что?!?", "Страшно, вырубай", "Спорно", "Та за шо", "Ты идиот", "Тупо домой", "Удачи вам", "Ясно"]
 
-let LIGHT_BACKGROUND_COLOR: UIColor = {
-    var c = UIColor.white
-    if #available(iOS 13.0, *) {
-        c = UIColor.systemBackground
-    }
-    return c
-}()
 
-let LABEL_COLOR: UIColor = {
-    var c = UIColor.black
-    if #available(iOS 13.0, *) {
-        c = UIColor.label
-    }
-    return c
+let RED_COLOR: UIColor = {
+    return UIColor(red: 215/255, green: 75/255, blue: 30/255, alpha: 1.0)
 }()
-
-let BACK_COLOR: UIColor = {
-    return UIColor(red: 241/255, green: 243/255, blue: 246/255, alpha: 1.0)
-}()
-
 

@@ -15,30 +15,30 @@ class InfoVC: UIViewController {
     
     let contactDeveloperButton: UIButton = {
         let b = UIButton(type: .system)
-        b.setTitle("Жалобы и Предложения", for: .normal)
-        b.setTitleColor(UIColor.white.withAlphaComponent(1), for: .normal)
+        b.setTitle("Write me", for: .normal)
+        b.setTitleColor(UIColor.init(named: "TextColor"), for: .normal)
         b.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 20)
-        b.backgroundColor = COLORS[7]
+        b.backgroundColor = UIColor.init(named: "BackColor")
         b.addTarget(self, action: #selector(mailToDeveloper), for: .touchUpInside)
         return b
     }()
     
     let thanksButton: UIButton = {
         let b = UIButton(type: .system)
-        b.setTitle("Дякую @starode за допомогу!", for: .normal)
-        b.setTitleColor(UIColor.white.withAlphaComponent(1), for: .normal)
+        b.setTitle("Thanks", for: .normal)
+        b.setTitleColor(UIColor.init(named: "TextColor"), for: .normal)
         b.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 20)
-        b.backgroundColor = COLORS[0]
+        b.backgroundColor = UIColor.init(named: "BackColor")
         b.addTarget(self, action: #selector(openInstagram), for: .touchUpInside)
         return b
     }()
     
     let smallTipButton: UIButton = {
         let b = UIButton(type: .system)
-        b.setTitle("Небольшой донат", for: .normal)
-        b.setTitleColor(UIColor.white.withAlphaComponent(1), for: .normal)
+        b.setTitle("Small Tip 2$", for: .normal)
+        b.setTitleColor(UIColor.init(named: "TextColor"), for: .normal)
         b.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 20)
-        b.backgroundColor = COLORS[1]
+        b.backgroundColor = UIColor.init(named: "BackColor")
         b.titleLabel?.adjustsFontSizeToFitWidth = true
         b.titleLabel?.minimumScaleFactor = 0.2
         b.titleLabel?.numberOfLines = 0
@@ -49,12 +49,12 @@ class InfoVC: UIViewController {
     
     let bigTipButton: UIButton = {
         let b = UIButton(type: .system)
-        b.setTitle("Большой донат", for: .normal)
-        b.setTitleColor(UIColor.white.withAlphaComponent(1), for: .normal)
+        b.setTitle("Big Tip 5$", for: .normal)
+        b.setTitleColor(UIColor.init(named: "TextColor"), for: .normal)
         b.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 20)
         b.titleLabel?.adjustsFontSizeToFitWidth = true
         b.titleLabel?.minimumScaleFactor = 0.2
-        b.backgroundColor = COLORS[2]
+        b.backgroundColor = UIColor.init(named: "BackColor")
         b.titleLabel?.numberOfLines = 0
         b.titleLabel?.textAlignment = .center
         b.addTarget(self, action: #selector(bigTip), for: .touchUpInside)
@@ -67,7 +67,7 @@ class InfoVC: UIViewController {
         l.numberOfLines = 0
         l.font = UIFont(name: "HelveticaNeue", size: 20)
         l.textColor = UIColor.white
-        l.backgroundColor = COLORS[6]
+        l.backgroundColor = UIColor.init(named: "BackColor")
         l.adjustsFontSizeToFitWidth = true
         l.minimumScaleFactor = 0.2
         return l
@@ -150,43 +150,25 @@ class InfoVC: UIViewController {
     }
 
     override func viewDidLoad() {
-        guard let bottomBar = self.navigationController?.tabBarController?.tabBar.frame else { return }
         super.viewDidLoad()
-        self.view.backgroundColor = BACK_COLOR
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationController?.title = "Другое"
-        self.navigationController?.navigationBar.barTintColor = BACK_COLOR
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 18)!]
-        if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.prefersLargeTitles = true
-        } else {
-            // Fallback on earlier versions
-        }
-        getVersion()
-        let startY: CGFloat = 126.0
-        versionLabel.frame = CGRect(x: 20, y: startY, width: UIScreen.main.bounds.width - 40, height: 98)
-        contactDeveloperButton.frame = CGRect(x: 20, y: bottomBar.minY - 82, width: UIScreen.main.bounds.width - 40, height: 74)
-        thanksButton.frame = CGRect(x: 20, y: contactDeveloperButton.frame.minY - 86, width: UIScreen.main.bounds.width - 40, height: 74)
-        smallTipButton.frame = CGRect(x: 20, y: thanksButton.frame.minY - 86, width: UIScreen.main.bounds.width/2 - 25, height: 74)
-        bigTipButton.frame = CGRect(x: smallTipButton.frame.maxX + 10, y: thanksButton.frame.minY - 86, width: UIScreen.main.bounds.width/2 - 25, height: 74)
+        smallTipButton.frame = CGRect(x: 20, y: 54, width: UIScreen.main.bounds.width/2 - 25, height: 74)
+        bigTipButton.frame = CGRect(x: smallTipButton.frame.maxX + 10, y: 54, width: UIScreen.main.bounds.width/2 - 25, height: 74)
+        contactDeveloperButton.frame = CGRect(x: 20, y: 148, width: UIScreen.main.bounds.width/2 - 25, height: 74)
+        thanksButton.frame = CGRect(x: smallTipButton.frame.maxX + 10, y: 148, width: UIScreen.main.bounds.width/2 - 25, height: 74)
 
-        versionLabel.dropShadow()
-        thanksButton.dropShadow()
-        contactDeveloperButton.dropShadow()
-        smallTipButton.dropShadow()
-        bigTipButton.dropShadow()
         
-        versionLabel.layer.cornerRadius = 15
         thanksButton.layer.cornerRadius = 15
         contactDeveloperButton.layer.cornerRadius = 15
         smallTipButton.layer.cornerRadius = 15
         bigTipButton.layer.cornerRadius = 15
-        
-        versionLabel.clipsToBounds = true
-        
+
+        thanksButton.addSoftUIEffectForButton(cornerRadius: 15)
+        contactDeveloperButton.addSoftUIEffectForButton(cornerRadius: 15)
+        smallTipButton.addSoftUIEffectForButton(cornerRadius: 15)
+        bigTipButton.addSoftUIEffectForButton(cornerRadius: 15)
+
         self.view.addSubview(contactDeveloperButton)
         self.view.addSubview(thanksButton)
-        self.view.addSubview(versionLabel)
         self.view.addSubview(smallTipButton)
         self.view.addSubview(bigTipButton)
         loadPurchases()
@@ -200,13 +182,4 @@ class InfoVC: UIViewController {
             print(products)
         }
     }
-    
-    fileprivate func getVersion() {
-        guard let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String else {return}
-        guard let build = Bundle.main.infoDictionary!["CFBundleVersion"] as? String else {return}
-        let about = "ArthasVoice 2019\nVladyslav Vdovychenko\nApplication\nVersion: \(version)\nBuild: \(build)"
-        versionLabel.text = about
-    }
-    
-
 }

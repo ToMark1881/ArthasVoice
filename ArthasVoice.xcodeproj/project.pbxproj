@@ -36,10 +36,11 @@
 		7D21CE0E2260EC2F000DB5FC /* roflanpoel-1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D21CE042260EC2F000DB5FC /* roflanpoel-1.m4a */; };
 		7D21CE0F2260EC2F000DB5FC /* chempion-1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D21CE052260EC2F000DB5FC /* chempion-1.m4a */; };
 		7D21CE102260EC2F000DB5FC /* balans-1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D21CE062260EC2F000DB5FC /* balans-1.m4a */; };
-		7D49FAB121E28B5A00168766 /* SoundTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D49FAB021E28B5A00168766 /* SoundTVC.swift */; };
 		7D69D80621FAF25000BC7492 /* dobriy_pochantek.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D69D80421FAF25000BC7492 /* dobriy_pochantek.m4a */; };
 		7D69D80721FAF25000BC7492 /* opa_f5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D69D80521FAF25000BC7492 /* opa_f5.m4a */; };
 		7D69D80921FAF6D000BC7492 /* virki_jinki.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D69D80821FAF6D000BC7492 /* virki_jinki.m4a */; };
+		7D6F946C24AE848200827B50 /* SHCircleBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F946B24AE848200827B50 /* SHCircleBarController.swift */; };
+		7D6F946E24AE84A200827B50 /* SHCircleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F946D24AE84A200827B50 /* SHCircleBar.swift */; };
 		7D90740B21FA4841006466A2 /* slojno.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D90740421FA4840006466A2 /* slojno.m4a */; };
 		7D90740C21FA4841006466A2 /* somnitelnaya_informaciya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D90740521FA4841006466A2 /* somnitelnaya_informaciya.m4a */; };
 		7D90740D21FA4841006466A2 /* solevarnya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D90740621FA4841006466A2 /* solevarnya.m4a */; };
@@ -54,7 +55,7 @@
 		7D937284230B052D00F47A69 /* lejat_plus_lejat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D937281230B052C00F47A69 /* lejat_plus_lejat.m4a */; };
 		7D937285230B052D00F47A69 /* kyda_ocherednyari.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D937282230B052C00F47A69 /* kyda_ocherednyari.m4a */; };
 		7D937286230B052D00F47A69 /* lololo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D937283230B052D00F47A69 /* lololo.m4a */; };
-		7D94CAD121F9C83900ED9762 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D94CAD021F9C83900ED9762 /* MainVC.swift */; };
+		7D94CAD121F9C83900ED9762 /* SoundsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D94CAD021F9C83900ED9762 /* SoundsVC.swift */; };
 		7D94CB4521F9C85D00ED9762 /* solianovo_aaa.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CAD221F9C85500ED9762 /* solianovo_aaa.m4a */; };
 		7D94CB4621F9C85D00ED9762 /* nu_pomogite_mne_tvari.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CAD321F9C85500ED9762 /* nu_pomogite_mne_tvari.m4a */; };
 		7D94CB4721F9C85D00ED9762 /* kto_eto_chto_eto_za_musor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D94CAD421F9C85500ED9762 /* kto_eto_chto_eto_za_musor.m4a */; };
@@ -174,6 +175,7 @@
 		7D9E91C623BB5EAE00803031 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E91C523BB5EAE00803031 /* Extensions.swift */; };
 		7DA72E4E24ADE63400909042 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA72E4C24ADE63400909042 /* SoundCell.swift */; };
 		7DA72E4F24ADE63400909042 /* SoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DA72E4D24ADE63400909042 /* SoundCell.xib */; };
+		7DA8463524AE290A00F3883F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA8463424AE290A00F3883F /* MainTabBarController.swift */; };
 		7DBCA63E21E2712D00A08DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCA63D21E2712D00A08DA4 /* AppDelegate.swift */; };
 		7DBCA64321E2712D00A08DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DBCA64121E2712D00A08DA4 /* Main.storyboard */; };
 		7DBCA64621E2712D00A08DA4 /* ArthasVoice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCA64421E2712D00A08DA4 /* ArthasVoice.xcdatamodeld */; };
@@ -220,6 +222,7 @@
 		7DF59CA022783DF900AE6A59 /* ursich.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7DF59C9122783DF900AE6A59 /* ursich.m4a */; };
 		7DFF7DB921EF9C4B005BFAB2 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFF7DB821EF9C4B005BFAB2 /* InfoVC.swift */; };
 		7DFF7DBB21EF9C5F005BFAB2 /* LikedSoundsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFF7DBA21EF9C5F005BFAB2 /* LikedSoundsVC.swift */; };
+		D9883D4A26BD6201738A9ABD /* Pods_ArthasVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814FB239F5F9136A463C5E98 /* Pods_ArthasVoice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -252,10 +255,11 @@
 		7D21CE042260EC2F000DB5FC /* roflanpoel-1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "roflanpoel-1.m4a"; sourceTree = "<group>"; };
 		7D21CE052260EC2F000DB5FC /* chempion-1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chempion-1.m4a"; sourceTree = "<group>"; };
 		7D21CE062260EC2F000DB5FC /* balans-1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "balans-1.m4a"; sourceTree = "<group>"; };
-		7D49FAB021E28B5A00168766 /* SoundTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTVC.swift; sourceTree = "<group>"; };
 		7D69D80421FAF25000BC7492 /* dobriy_pochantek.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = dobriy_pochantek.m4a; sourceTree = "<group>"; };
 		7D69D80521FAF25000BC7492 /* opa_f5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = opa_f5.m4a; sourceTree = "<group>"; };
 		7D69D80821FAF6D000BC7492 /* virki_jinki.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = virki_jinki.m4a; sourceTree = "<group>"; };
+		7D6F946B24AE848200827B50 /* SHCircleBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCircleBarController.swift; sourceTree = "<group>"; };
+		7D6F946D24AE84A200827B50 /* SHCircleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCircleBar.swift; sourceTree = "<group>"; };
 		7D90740421FA4840006466A2 /* slojno.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = slojno.m4a; sourceTree = "<group>"; };
 		7D90740521FA4841006466A2 /* somnitelnaya_informaciya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = somnitelnaya_informaciya.m4a; sourceTree = "<group>"; };
 		7D90740621FA4841006466A2 /* solevarnya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = solevarnya.m4a; sourceTree = "<group>"; };
@@ -270,7 +274,7 @@
 		7D937281230B052C00F47A69 /* lejat_plus_lejat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = lejat_plus_lejat.m4a; sourceTree = "<group>"; };
 		7D937282230B052C00F47A69 /* kyda_ocherednyari.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kyda_ocherednyari.m4a; sourceTree = "<group>"; };
 		7D937283230B052D00F47A69 /* lololo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = lololo.m4a; sourceTree = "<group>"; };
-		7D94CAD021F9C83900ED9762 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		7D94CAD021F9C83900ED9762 /* SoundsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsVC.swift; sourceTree = "<group>"; };
 		7D94CAD221F9C85500ED9762 /* solianovo_aaa.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = solianovo_aaa.m4a; sourceTree = "<group>"; };
 		7D94CAD321F9C85500ED9762 /* nu_pomogite_mne_tvari.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nu_pomogite_mne_tvari.m4a; sourceTree = "<group>"; };
 		7D94CAD421F9C85500ED9762 /* kto_eto_chto_eto_za_musor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kto_eto_chto_eto_za_musor.m4a; sourceTree = "<group>"; };
@@ -390,6 +394,7 @@
 		7D9E91C523BB5EAE00803031 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7DA72E4C24ADE63400909042 /* SoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
 		7DA72E4D24ADE63400909042 /* SoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundCell.xib; sourceTree = "<group>"; };
+		7DA8463424AE290A00F3883F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		7DBCA63A21E2712D00A08DA4 /* ArthasVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArthasVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBCA63D21E2712D00A08DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DBCA64221E2712D00A08DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -438,6 +443,9 @@
 		7DF59C9122783DF900AE6A59 /* ursich.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ursich.m4a; sourceTree = "<group>"; };
 		7DFF7DB821EF9C4B005BFAB2 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		7DFF7DBA21EF9C5F005BFAB2 /* LikedSoundsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedSoundsVC.swift; sourceTree = "<group>"; };
+		814FB239F5F9136A463C5E98 /* Pods_ArthasVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArthasVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3EA3BA728061BC0C9454225 /* Pods-ArthasVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArthasVoice.debug.xcconfig"; path = "Target Support Files/Pods-ArthasVoice/Pods-ArthasVoice.debug.xcconfig"; sourceTree = "<group>"; };
+		C64591656EB95683F503D7A6 /* Pods-ArthasVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArthasVoice.release.xcconfig"; path = "Target Support Files/Pods-ArthasVoice/Pods-ArthasVoice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,12 +453,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9883D4A26BD6201738A9ABD /* Pods_ArthasVoice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78DF0635D944D626AD1F6AA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA3BA728061BC0C9454225 /* Pods-ArthasVoice.debug.xcconfig */,
+				C64591656EB95683F503D7A6 /* Pods-ArthasVoice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D6F946A24AE846A00827B50 /* CircleTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F946B24AE848200827B50 /* SHCircleBarController.swift */,
+				7D6F946D24AE84A200827B50 /* SHCircleBar.swift */,
+			);
+			name = CircleTabBar;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		7D94CBB821F9C8A700ED9762 /* ArthasSounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,11 +686,21 @@
 			path = ArthasSounds;
 			sourceTree = "<group>";
 		};
+		7DA8463924AE317B00F3883F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				814FB239F5F9136A463C5E98 /* Pods_ArthasVoice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DBCA63121E2712D00A08DA4 = {
 			isa = PBXGroup;
 			children = (
 				7DBCA63C21E2712D00A08DA4 /* ArthasVoice */,
 				7DBCA63B21E2712D00A08DA4 /* Products */,
+				7DA8463924AE317B00F3883F /* Frameworks */,
+				78DF0635D944D626AD1F6AA3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -678,7 +716,7 @@
 			isa = PBXGroup;
 			children = (
 				7D94CBB821F9C8A700ED9762 /* ArthasSounds */,
-				7D49FAB021E28B5A00168766 /* SoundTVC.swift */,
+				7D6F946A24AE846A00827B50 /* CircleTabBar */,
 				7DA72E4C24ADE63400909042 /* SoundCell.swift */,
 				7DA72E4D24ADE63400909042 /* SoundCell.xib */,
 				7D9E91C523BB5EAE00803031 /* Extensions.swift */,
@@ -686,7 +724,8 @@
 				7DFF7DBA21EF9C5F005BFAB2 /* LikedSoundsVC.swift */,
 				7DFF7DB821EF9C4B005BFAB2 /* InfoVC.swift */,
 				7DC7E29F22B6D2FC006C7CEA /* Purchases.swift */,
-				7D94CAD021F9C83900ED9762 /* MainVC.swift */,
+				7D94CAD021F9C83900ED9762 /* SoundsVC.swift */,
+				7DA8463424AE290A00F3883F /* MainTabBarController.swift */,
 				7DBCA64721E2712E00A08DA4 /* Assets.xcassets */,
 				7DBCA64921E2712E00A08DA4 /* LaunchScreen.storyboard */,
 				7DBCA64121E2712D00A08DA4 /* Main.storyboard */,
@@ -703,6 +742,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DBCA64F21E2712E00A08DA4 /* Build configuration list for PBXNativeTarget "ArthasVoice" */;
 			buildPhases = (
+				1867A79683FC0C4DF60B7573 /* [CP] Check Pods Manifest.lock */,
 				7DBCA63621E2712D00A08DA4 /* Sources */,
 				7DBCA63721E2712D00A08DA4 /* Frameworks */,
 				7DBCA63821E2712D00A08DA4 /* Resources */,
@@ -964,6 +1004,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1867A79683FC0C4DF60B7573 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArthasVoice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7DBCA63621E2712D00A08DA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -971,11 +1036,13 @@
 			files = (
 				7DC7E2A022B6D2FC006C7CEA /* Purchases.swift in Sources */,
 				7DBCA63E21E2712D00A08DA4 /* AppDelegate.swift in Sources */,
-				7D94CAD121F9C83900ED9762 /* MainVC.swift in Sources */,
+				7D6F946E24AE84A200827B50 /* SHCircleBar.swift in Sources */,
+				7DA8463524AE290A00F3883F /* MainTabBarController.swift in Sources */,
+				7D94CAD121F9C83900ED9762 /* SoundsVC.swift in Sources */,
 				7DA72E4E24ADE63400909042 /* SoundCell.swift in Sources */,
 				7D9E91C623BB5EAE00803031 /* Extensions.swift in Sources */,
 				7DBCA64621E2712D00A08DA4 /* ArthasVoice.xcdatamodeld in Sources */,
-				7D49FAB121E28B5A00168766 /* SoundTVC.swift in Sources */,
+				7D6F946C24AE848200827B50 /* SHCircleBarController.swift in Sources */,
 				7DFF7DBB21EF9C5F005BFAB2 /* LikedSoundsVC.swift in Sources */,
 				7DFF7DB921EF9C4B005BFAB2 /* InfoVC.swift in Sources */,
 			);
@@ -1121,17 +1188,18 @@
 		};
 		7DBCA65021E2712E00A08DA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EA3BA728061BC0C9454225 /* Pods-ArthasVoice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 839QV4DU65;
 				INFOPLIST_FILE = ArthasVoice/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ToMark1881.ArthasVoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1141,17 +1209,18 @@
 		};
 		7DBCA65121E2712E00A08DA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64591656EB95683F503D7A6 /* Pods-ArthasVoice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 839QV4DU65;
 				INFOPLIST_FILE = ArthasVoice/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ToMark1881.ArthasVoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
